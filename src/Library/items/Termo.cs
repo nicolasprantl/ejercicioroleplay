@@ -24,7 +24,7 @@ namespace RoleplayGame.Items
         
         public override string ToString()
         {
-            return "Termo";
+            return "termo";
         }
     }
 }
