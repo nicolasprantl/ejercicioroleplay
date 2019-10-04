@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Magia. Permite atacar y defender.
     /// </summary>
-    public class chancleta : IAttackItem
+    public class Palo : IAttackItem
     {
         /// <summary>
         /// El poder de ataque
@@ -13,13 +13,13 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return 40;
+                return 80;
             }
         }
 
         public override string ToString()
         {
-            return "Chancleta";
+            return "Palo";
         }
     }
 }

@@ -2,15 +2,15 @@ using System;
 
 namespace RoleplayGame.Items
 {
-    class Palelota : IAttackitem, IDefenseItem
+    class Palelota : IAttackItem, IDefenseItem
     {
-        private Pelota pelota = new Paleta();
-        private Paleta paleta = new Pelota();
+        private Pelota pelota = new Pelota();
+        private Paleta paleta = new Paleta();
         public int AttackPower
         {
             get
             {
-                return (pelota.AttackPower + paleta.AttackPower);
+                return (pelota.AttackPower);
             }
         }
 
@@ -18,7 +18,7 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return (pelota.DefensePower + pelota.DefensePower);
+                return (paleta.DefensePower);
             }
         }
 
