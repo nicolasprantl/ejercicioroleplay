@@ -1,9 +1,9 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Termo. Permite atacar.
+    /// Pelota. Permite atacar.
     /// </summary>
-    public class Termo : IAttackItem
+    public class Pelota : IAttackItem
     {
         /// <summary>
         /// El poder de ataque
@@ -13,13 +13,13 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return 30;
+                return 52;
             }
         }
         
         public override string ToString()
         {
-            return "Termo";
+            return "Pelota";
         }
     }
 }
