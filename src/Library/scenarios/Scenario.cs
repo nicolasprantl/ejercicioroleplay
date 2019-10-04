@@ -14,7 +14,7 @@ namespace RoleplayGame.Scenarios
         public void Setup()
         {
             Elf p1 = new Elf("Nico");
-            Orco p2 = new Orco("Facu");
+            Orco p2 = new Orco("Facundo");
             Wizard p3 = new Wizard("Maria");
             Orco p4 = new Orco("Rod");
 
