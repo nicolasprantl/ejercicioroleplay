@@ -5,5 +5,6 @@ namespace RoleplayGame.Items
     /// </summary>
     public interface IItem
     {
+        
     }
 }
