@@ -16,3 +16,4 @@ namespace RoleplayGame.Characters
             this.AddItem(new Palo());
         }
     }
+}
