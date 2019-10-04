@@ -5,7 +5,9 @@ namespace RoleplayGame.Items
 {
     public interface ICombinedItem: IItem
     {
-        private string = "caca";
-        protected List<IItem> items = new List<IItem>();
+        List<IItem> items{ get;}
+        void AddItem
+        {
+        }
     }
 }
