@@ -1,7 +1,7 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Magia. Permite atacar y defender.
+    /// Pelota. Permite atacar.
     /// </summary>
     public class Pelota : IAttackItem
     {
@@ -16,11 +16,6 @@ namespace RoleplayGame.Items
                 return 52;
             }
         }
-
-        /// <summary>
-        /// El poder de defensa
-        /// </summary>
-        /// <value></value>
         
         public override string ToString()
         {

@@ -1,7 +1,7 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Magia. Permite atacar y defender.
+    /// Termo. Permite atacar.
     /// </summary>
     public class Termo : IAttackItem
     {
@@ -16,15 +16,10 @@ namespace RoleplayGame.Items
                 return 30;
             }
         }
-
-        /// <summary>
-        /// El poder de defensa
-        /// </summary>
-        /// <value></value>
         
         public override string ToString()
         {
-            return "termo";
+            return "Termo";
         }
     }
 }
