@@ -5,9 +5,7 @@ namespace RoleplayGame.Items
 {
     public interface ICombinedItem: IItem
     {
-        List<IItem> items{ get;}
-        void AddItem
-        {
-        }
+        List<IItem> Items{ get;}
+        void AddItem(IItem item);
     }
 }

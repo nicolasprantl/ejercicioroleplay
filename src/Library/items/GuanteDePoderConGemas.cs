@@ -3,19 +3,20 @@ using System.Collections.Generic;
 
 namespace RoleplayGame.Items
 {
-    class GuanteDePoderConGemas : IAttackitem, IDefenseItem, ICombinedItem
+    class GuanteDePoderConGemas : IAttackItem, IDefenseItem, ICombinedItem
     {
-        private GuanteDePoder guante = new GuanteDePoder();
-        private List<Gema> gemas = new List<Gema>();
-        public void AddItem(Gema gema)
+        private Guante_de_poder guante = new Guante_de_poder();
+        private List<IItem> items = new List<IItem>();
+        public List<IItem> Items{ get;}
+        public void AddItem(IItem gema)
         {
-            this.gemas.Add(gema);
+            this.items.Add((IItem)gema);
         }
         public int AttackPower
         {
             get
             {
-                return (200*this.gemas.Count);
+                return (200*this.items.Count);
             }
         }
 
@@ -23,13 +24,13 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return (200*this.gemas.Count);
+                return (200*this.items.Count);
             }
         }
 
         public override string ToString()
         {
-            return ("Guante con" + (this.gemas.Count).ToString());
+            return ("Guante con" + (this.items.Count).ToString());
         }
     }
 }
