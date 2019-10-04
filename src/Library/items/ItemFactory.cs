@@ -6,7 +6,7 @@ namespace RoleplayGame.Items
     public enum ItemType
     {
         Magic = 1,
-        Robes = 2,
+        Robes = 2,   
     }
 
     /// <summary>
